@@ -79,6 +79,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="5" maxValue="10" minimumValueImage="5.circle" catalog="system" maximumValueImage="10.circle" translatesAutoresizingMaskIntoConstraints="NO" id="JZ1-2Q-LWy">
                                         <rect key="frame" x="-2" y="210.5" width="378" height="31"/>
                                         <color key="tintColor" systemColor="labelColor"/>
+                                        <connections>
+                                            <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="JKW-73-rMm"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDv-FU-Yav">
                                         <rect key="frame" x="0.0" y="262.5" width="374" height="20.5"/>
@@ -98,6 +101,9 @@
                                             <segment title="Scifi"/>
                                             <segment title="Horror"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="changeStoryType:" destination="BYZ-38-t0r" eventType="valueChanged" id="BDZ-JG-7Ih"/>
+                                        </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bf1-KN-ETN">
                                         <rect key="frame" x="0.0" y="400.5" width="374" height="30"/>
@@ -115,6 +121,13 @@
                             <constraint firstItem="5rh-UB-J4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYE-Gn-SEI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adjectiveTextField" destination="xM0-SW-6tN" id="2Wt-Yr-ckj"/>
+                        <outlet property="nounTextField" destination="2ZV-Bz-0Vd" id="0W9-dL-7ab"/>
+                        <outlet property="numberLabel" destination="kh0-Qh-KSm" id="HXT-4K-SBR"/>
+                        <outlet property="numberSlider" destination="JZ1-2Q-LWy" id="QrR-oV-jfb"/>
+                        <outlet property="verbTextField" destination="UmM-qp-i9Q" id="U3y-ze-s3q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
