@@ -28,7 +28,11 @@ class ViewController: UIViewController {
         } else{
             storyPrompt.genre = .scifi
         }
-        //print(storyPrompt.genre)
+    }
+    
+    @IBAction func generateStoryPrompt(_ sender: Any) {
+        updateStoryPrompt()
+        print(storyPrompt)
     }
     
     override func viewDidLoad() {
@@ -38,9 +42,20 @@ class ViewController: UIViewController {
         storyPrompt.adjective = "smelly"
         storyPrompt.verb = "burps"
         storyPrompt.number = Int(numberSlider.value)
-        print(storyPrompt)
+}
+    
+    func updateStoryPrompt() {
+        storyPrompt.noun = nounTextField.text ?? ""
+        storyPrompt.adjective = adjectiveTextField.text ?? ""
+        storyPrompt.verb = verbTextField.text ?? ""
     }
+}
 
-
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        updateStoryPrompt()
+        return true
+    }
 }
 

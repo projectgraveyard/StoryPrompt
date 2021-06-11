@@ -33,6 +33,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3h5-ao-4Ww"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -50,6 +53,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kpr-qB-BuM"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -67,6 +73,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3nj-a4-orc"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -109,6 +118,9 @@
                                         <rect key="frame" x="0.0" y="400.5" width="374" height="30"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Generate Story Prompt"/>
+                                        <connections>
+                                            <action selector="generateStoryPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Vz-wA-Udh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
